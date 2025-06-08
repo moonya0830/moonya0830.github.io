@@ -76,6 +76,11 @@ p {
     font-size: 20px;
 }
 
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
 .common-circle {
     border: solid 1px #000;
     padding: 5px 10px;
@@ -125,4 +130,79 @@ p {
     background-color: #EDEDED;
     padding: 20px;
     border-radius: 24px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.page-circle {
+    border: 1px solid #000000;
+    padding: 8px 16px;
+    border-radius: 40px;
+    background-color: #FBFBFB;
+    color: #4B4B4B;
+}
+
+.footer {
+    width: 100%;
+    height: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #E5E5E5;
+}
+
+.footer p {
+    width: 1039px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 4px;
+}
+
+.footer-icons li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    background: #fff;
+    width: 100%;
+    height: 72px;
+    line-height: 24px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+@media (max-width: 1399.98px) {
+    .container {
+        width: 100%;
+        padding: 40px 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 100%;
+        padding: 40px 12px;
+    }
+    .footer {
+        height: 1px;
+    }
+    .footer * {
+        display: none;
+    }
 }
